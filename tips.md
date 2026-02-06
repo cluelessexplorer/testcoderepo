@@ -8,6 +8,11 @@ curl -v -X OPTIONS "https://api.example.com/v1/resources" \
   -H "Access-Control-Request-Method: POST" \
   -H "Access-Control-Request-Headers: Authorization, Content-Type"
 
+curl -v -X OPTIONS "https://api.example.com/v1/resources" \
+  -H "Origin: https://app.example.com" \
+  -H "Access-Control-Request-Method: GET" \
+  -H "Access-Control-Request-Headers: Authorization"
+
 
 ### GET
 curl -v -X GET "https://api.example.com/v1/profile" \
